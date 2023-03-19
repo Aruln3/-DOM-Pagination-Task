@@ -1,0 +1,99 @@
+/* Center the pagination table */
+#table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the pagination links */
+.pagination-link {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Style the active page link */
+.active-link {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* Disable the previous and next links when at the first/last page */
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-btn:hover,
+pagination-btn--active {
+  background-color: skyblue;
+  font-weight:bold;
+  transition:.1s;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  color: #000;
+  border: 2px #4CAF50 solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.pagination-btn.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
